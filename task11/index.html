@@ -8,16 +8,41 @@
     body {
       font-family: Arial, sans-serif;
       margin: 30px;
+      height: 100dvh;
+      width: 100dvw;
+    }
+    .main {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
     }
     #greeting {
       margin-top: 20px;
       font-size: 1.2em;
       color: rgb(236, 9, 108);
     }
+    input {
+      height: 30px;
+      width: 190px;
+      text-align: center;
+      color: red;
+      border-radius: 5px;
+      border-color:  rgb(27, 237, 206);
+    }
+    button {
+      padding: 10px;
+      background-color: rgb(27, 237, 206);
+      border: none;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
-
+<marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestiae rerum cumque odit delectus. Ratione ipsum dolorem molestias cupiditate itaque totam iste sed modi, soluta rerum, fuga aut eius delectus.</marquee>
+  <div class="main">
   <h1>Masukkan Nama Pengguna</h1>
 
   <form id="userForm">
@@ -26,6 +51,7 @@
   </form>
 
   <div id="greeting"></div>
+</div>
 
   <script>
     // Cek jika nama pengguna sudah ada di localStorage saat halaman dimuat
